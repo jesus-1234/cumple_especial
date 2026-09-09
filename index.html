@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Para una persona muy especial 🎂</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Fuente -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- =====================================================
+         FONDO
+    ====================================================== -->
+
+    <div class="stars"></div>
+
+    <div class="hearts-container"></div>
+
+    <!-- =====================================================
+         MÚSICA
+    ====================================================== -->
+
+    <audio id="music" loop>
+        <source src="assets/musica.mp3" type="audio/mpeg">
+    </audio>
+
+    <button class="music-btn" id="musicBtn">
+        🎵
+    </button>
+
+    <!-- =====================================================
+         PANTALLA DE INICIO
+    ====================================================== -->
+
+    <section class="screen active" id="inicio">
+
+        <div class="intro">
+
+            <div class="cake-animation">
+                🎂
+            </div>
+
+            <p class="small-title">
+                Tengo algo preparado para ti...
+            </p>
+
+            <h1>
+                Para una persona<br>
+                <span>muy especial</span>
+            </h1>
+
+            <p class="intro-text">
+                Hoy es un día especial porque nació alguien
+                que con el tiempo se convirtió en una persona
+                increíble en mi vida.
+            </p>
+
+            <button class="main-btn" onclick="goTo('historia')">
+                ✨ Comenzar
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         HISTORIA
+    ====================================================== -->
+
+    <section class="screen" id="historia">
+
+        <div class="content">
+
+            <span class="section-number">01</span>
+
+            <h2>
+                Desde que éramos niños...
+            </h2>
+
+            <div class="memory-card">
+
+                <div class="memory-image">
+                    <img src="assets/foto1.jpg" alt="Recuerdo">
+                </div>
+
+                <div class="memory-text">
+
+                    <p>
+                        Hay personas que llegan a nuestra vida
+                        y simplemente están ahí.
+                    </p>
+
+                    <p>
+                        Y hay otras que, sin darnos cuenta,
+                        terminan formando parte de nuestra historia.
+                    </p>
+
+                    <p>
+                        Tú eres una de esas personas.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <button class="main-btn" onclick="goTo('admiracion')">
+                Continuar 🌷
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         ADMIRACIÓN
+    ====================================================== -->
+
+    <section class="screen" id="admiracion">
+
+        <div class="content">
+
+            <span class="section-number">02</span>
+
+            <h2>
+                Algo que siempre he admirado de ti
+            </h2>
+
+            <div class="quote-box">
+
+                <div class="quote-icon">
+                    ✨
+                </div>
+
+                <p>
+                    "Desde que te conozco siempre he pensado
+                    que tienes algo especial."
+                </p>
+
+                <span>
+                    — Alguien que ha tenido la suerte de conocerte
+                </span>
+
+            </div>
+
+            <p class="normal-text">
+
+                Con los años he podido ver cómo has crecido,
+                cómo has cambiado y cómo has ido construyendo
+                la persona que eres hoy.
+
+                <br><br>
+
+                Y sinceramente, creo que eres una persona
+                maravillosa.
+
+            </p>
+
+            <button class="main-btn" onclick="goTo('cosas')">
+                Hay más que decirte 💫
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         COSAS QUE ADMIRAMOS
+    ====================================================== -->
+
+    <section class="screen" id="cosas">
+
+        <div class="content">
+
+            <span class="section-number">03</span>
+
+            <h2>
+                Algunas cosas que admiro de ti
+            </h2>
+
+            <div class="qualities">
+
+                <div class="quality-card">
+                    <div>🌷</div>
+                    <h3>Tu forma de ser</h3>
+                    <p>
+                        Porque tienes una manera única
+                        de hacer que las personas se sientan bien.
+                    </p>
+                </div>
+
+                <div class="quality-card">
+                    <div>✨</div>
+                    <h3>Tu personalidad</h3>
+                    <p>
+                        Esa esencia que te hace ser
+                        simplemente tú.
+                    </p>
+                </div>
+
+                <div class="quality-card">
+                    <div>💫</div>
+                    <h3>Tu manera de seguir adelante</h3>
+                    <p>
+                        Porque incluso cuando las cosas
+                        no son fáciles, sigues avanzando.
+                    </p>
+                </div>
+
+                <div class="quality-card">
+                    <div>❤️</div>
+                    <h3>Tu corazón</h3>
+                    <p>
+                        Porque detrás de esa persona que todos
+                        conocen existe alguien con muchísimo valor.
+                    </p>
+                </div>
+
+            </div>
+
+            <button class="main-btn" onclick="goTo('carta')">
+                Abrir mi carta 💌
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         CARTA
+    ====================================================== -->
+
+    <section class="screen" id="carta">
+
+        <div class="content letter-content">
+
+            <span class="section-number">04</span>
+
+            <h2>
+                Unas palabras para ti
+            </h2>
+
+            <div class="letter">
+
+                <div class="letter-top">
+                    💌
+                </div>
+
+                <p id="typewriter"></p>
+
+            </div>
+
+            <button class="main-btn hidden" id="continueLetter" onclick="goTo('recuerdos')">
+                Continuar ✨
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         RECUERDOS
+    ====================================================== -->
+
+    <section class="screen" id="recuerdos">
+
+        <div class="content">
+
+            <span class="section-number">05</span>
+
+            <h2>
+                Nuestra pequeña historia
+            </h2>
+
+            <div class="photo-gallery">
+
+                <div class="photo-card">
+                    <img src="assets/foto1.jpg" alt="Recuerdo 1">
+                    <span>Desde aquellos años...</span>
+                </div>
+
+                <div class="photo-card">
+                    <img src="assets/foto2.jpg" alt="Recuerdo 2">
+                    <span>Cuántas cosas han cambiado...</span>
+                </div>
+
+                <div class="photo-card">
+                    <img src="assets/foto3.jpg" alt="Recuerdo 3">
+                    <span>Pero algunos recuerdos permanecen.</span>
+                </div>
+
+            </div>
+
+            <button class="main-btn" onclick="goTo('sorpresa')">
+                Tengo una última sorpresa 🎁
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         SORPRESA
+    ====================================================== -->
+
+    <section class="screen" id="sorpresa">
+
+        <div class="content">
+
+            <span class="section-number">06</span>
+
+            <h2>
+                Elige una sorpresa
+            </h2>
+
+            <div class="surprises">
+
+                <button onclick="showSurprise(1)">
+                    🌟
+                    <span>Una frase</span>
+                </button>
+
+                <button onclick="showSurprise(2)">
+                    💭
+                    <span>Un recuerdo</span>
+                </button>
+
+                <button onclick="showSurprise(3)">
+                    💌
+                    <span>Un deseo</span>
+                </button>
+
+            </div>
+
+            <div class="surprise-message" id="surpriseMessage">
+                <span>✨</span>
+                <p>
+                    Elige una de las opciones...
+                </p>
+            </div>
+
+            <button class="main-btn" onclick="goTo('final')">
+                Ver el final 🎂
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         FINAL
+    ====================================================== -->
+
+    <section class="screen final-screen" id="final">
+
+        <div class="final-content">
+
+            <div class="final-cake">
+                🎂
+            </div>
+
+            <h1>
+                ¡Feliz cumpleaños!
+            </h1>
+
+            <h2>
+                Para mi persona Favorita: Marita♡
+            </h2>
+
+            <p>
+                Espero que este nuevo año de tu vida
+                venga lleno de momentos bonitos,
+                personas que te quieran,
+                sueños cumplidos y muchas razones
+                para sonreír.
+            </p>
+
+            <p>
+                Gracias por existir,
+                gracias por todos estos años
+                y gracias por formar parte de mi historia.
+            </p>
+
+            <div class="final-message">
+
+                <span>✨</span>
+
+                <p>
+                    Nunca olvides lo maravillosa que eres.
+                </p>
+
+                <span>✨</span>
+
+            </div>
+
+            <h3>
+                Con mucho aprecio ❤️
+            </h3>
+
+            <button class="restart-btn" onclick="restartPage()">
+                🔄 Volver a comenzar
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         CONFETI
+    ====================================================== -->
+
+    <div id="confetti-container"></div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
